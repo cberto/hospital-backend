@@ -16,6 +16,8 @@ app.use(express.json());
 dbConnection();
 
 app.use('/api/users', require('./routes/users'));
+app.use('/api/hospital', require('./routes/hospital'));
+app.use('/api/doctors', require('./routes/doctors'));
 app.use('/api/login', require('./routes/auth'));
 
 // app.get('/api/users');
